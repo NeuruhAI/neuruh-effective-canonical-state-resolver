@@ -1,0 +1,37 @@
+{
+  "artifact": "effective-canonical-state-resolver",
+  "maturity": "ACTIVE_ALPHA",
+  "package_version": "0.1.0a0",
+  "public_boundary": {
+    "customer_data": false,
+    "domain_recipes": false,
+    "private_connectors": false,
+    "private_memory": false,
+    "private_policies": false,
+    "production_authority_topology": false,
+    "production_routing": false,
+    "production_runtime": false,
+    "proprietary_scoring": false
+  },
+  "qualification": {
+    "cli_smoke": "PASS",
+    "exact_public_composition": "PASS",
+    "git_history_gitleaks": "PASS",
+    "license": "Apache-2.0",
+    "private_implementation_reference_scan": "PASS",
+    "source_secret_pattern_scan": "PASS",
+    "synthetic_end_to_end": "PASS",
+    "synthetic_examples_only": true,
+    "tests": {
+      "count": 33,
+      "status": "PASS"
+    },
+    "wheel_build": "PASS"
+  },
+  "qualified_at": "2026-08-10T20:49:04.051656+00:00",
+  "release_version": "v0.1.0-alpha",
+  "repository": "NeuruhAI/neuruh-effective-canonical-state-resolver",
+  "schema_version": "neuruh.public-release-receipt.v1",
+  "status": "QUALIFIED_FOR_PUBLIC_RELEASE_PENDING_FOUNDER_AUTHORIZATION",
+  "tested_source_commit": "e9723f02c0f85e291623b183e4761900ad0944f9"
+}
