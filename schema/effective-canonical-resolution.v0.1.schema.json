@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Neuruh Effective Canonical Resolution v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "target_id", "resolution_status", "reason_code",
+    "effective_source", "effective_stage", "effective_state_digest",
+    "lifecycle_tip_digest", "revision_tip_hash", "applied_revision_count",
+    "lineage_classifications", "evidence_digest",
+    "lifecycle_ledger_mutated", "lifecycle_transition_authority",
+    "canonical_state_revision_authority", "canonical_state_authority",
+    "execution_authority", "deployment_authority", "reconciliation_authority",
+    "mutation_authority", "resolution_digest"
+  ],
+  "properties": {
+    "schema_version": {"const": "neuruh.effective-canonical-state-resolver.v0.1"},
+    "target_id": {"type": "string", "minLength": 1},
+    "resolution_status": {"enum": ["resolved", "ambiguous"]},
+    "reason_code": {"enum": ["OK", "MISSING_LIFECYCLE_EVIDENCE", "AMBIGUOUS_COMPETING_TIPS", "FORKED_REVISION_LINEAGE", "LIFECYCLE_ANCHOR_CONTENT_MISMATCH"]},
+    "effective_source": {"anyOf": [{"type": "null"}, {"enum": ["lifecycle_tip", "revision_tip"]}]},
+    "effective_stage": {"anyOf": [{"type": "null"}, {"enum": ["sandbox", "canary", "pilot", "production"]}]},
+    "effective_state_digest": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256ref"}]},
+    "lifecycle_tip_digest": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/sha256ref"}]},
+    "revision_tip_hash": {"anyOf": [{"type": "null"}, {"$ref": "#/$defs/hex64"}]},
+    "applied_revision_count": {"type": "integer", "minimum": 0},
+    "lineage_classifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["lineage_digest", "anchor_digest", "classification"],
+        "properties": {
+          "lineage_digest": {"$ref": "#/$defs/sha256ref"},
+          "anchor_digest": {"$ref": "#/$defs/sha256ref"},
+          "classification": {"enum": ["applied", "superseded_stale_anchor", "forked_conflict", "anchor_content_mismatch", "not_evaluated"]}
+        }
+      }
+    },
+    "evidence_digest": {"$ref": "#/$defs/sha256ref"},
+    "lifecycle_ledger_mutated": {"const": false},
+    "lifecycle_transition_authority": {"const": false},
+    "canonical_state_revision_authority": {"const": false},
+    "canonical_state_authority": {"const": false},
+    "execution_authority": {"const": false},
+    "deployment_authority": {"const": false},
+    "reconciliation_authority": {"const": false},
+    "mutation_authority": {"const": false},
+    "resolution_digest": {"$ref": "#/$defs/sha256ref"}
+  },
+  "$defs": {
+    "sha256ref": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "hex64": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

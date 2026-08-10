@@ -1,0 +1,43 @@
+{
+  "lifecycle_tips": [
+    {
+      "lifecycle_entry_digest": "sha256:c1942a9a25e5b7b3cdc8a5e7e905e23bf88de5076787007834733865b557b9b3",
+      "sequence": 2,
+      "stage": "pilot",
+      "state_digest": "sha256:a0c3d8219f04ff16df89ecd74c8c6082b399bce63633f263d88ba0d485b44970",
+      "target_id": "synthetic-target"
+    }
+  ],
+  "revision_lineages": [
+    [
+      {
+        "anchor_stage": "pilot",
+        "anchor_state_digest": "sha256:a0c3d8219f04ff16df89ecd74c8c6082b399bce63633f263d88ba0d485b44970",
+        "canonical_state_authority": false,
+        "canonical_state_revision_authority": false,
+        "deployment_authority": false,
+        "entry_hash": "4dedbf3d6de98f808ad1a9570ce8ced2c64d41a2193fbc269dc6f68eee8f0b6f",
+        "execution_authority": false,
+        "from_canonical_state_digest": "sha256:a0c3d8219f04ff16df89ecd74c8c6082b399bce63633f263d88ba0d485b44970",
+        "ledger_id": "canonical-revision",
+        "lifecycle_anchor_digest": "sha256:c1942a9a25e5b7b3cdc8a5e7e905e23bf88de5076787007834733865b557b9b3",
+        "lifecycle_ledger_mutated": false,
+        "lifecycle_transition_authority": false,
+        "mutation_authority": false,
+        "previous_entry_hash": null,
+        "receipt_status": "succeeded",
+        "reconciliation_authority": false,
+        "recorded_at": "2026-08-10T12:00:00Z",
+        "revision_authorization_digest": "sha256:708cb73841f78c241176650ebc48e42546252ba2e2d2763ccc59ddcb251ae362",
+        "revision_id": "synthetic-rev-1",
+        "revision_mode": "adopt_observed",
+        "revision_receipt_digest": "sha256:02b2127d02292cc6b52b89e6b85ab222bf96afc282cd2738b520a484529c8083",
+        "schema_version": "neuruh.canonical-state-revision-ledger.v0.1",
+        "sequence": 0,
+        "target_id": "synthetic-target",
+        "to_canonical_state_digest": "sha256:4a736ede8df2d2464e774214f5e925c36dab43052c589afc138c46dc52d475ca"
+      }
+    ]
+  ],
+  "target_id": "synthetic-target"
+}

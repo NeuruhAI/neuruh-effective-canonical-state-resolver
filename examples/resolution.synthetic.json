@@ -1,0 +1,29 @@
+{
+  "applied_revision_count": 1,
+  "canonical_state_authority": false,
+  "canonical_state_revision_authority": false,
+  "deployment_authority": false,
+  "effective_source": "revision_tip",
+  "effective_stage": "pilot",
+  "effective_state_digest": "sha256:4a736ede8df2d2464e774214f5e925c36dab43052c589afc138c46dc52d475ca",
+  "evidence_digest": "sha256:4ae8519d561af7f2d813b48eff4a00efc93dec235fc8d2b96b1aebbb5f8d59e6",
+  "execution_authority": false,
+  "lifecycle_ledger_mutated": false,
+  "lifecycle_tip_digest": "sha256:c1942a9a25e5b7b3cdc8a5e7e905e23bf88de5076787007834733865b557b9b3",
+  "lifecycle_transition_authority": false,
+  "lineage_classifications": [
+    {
+      "anchor_digest": "sha256:c1942a9a25e5b7b3cdc8a5e7e905e23bf88de5076787007834733865b557b9b3",
+      "classification": "applied",
+      "lineage_digest": "sha256:82ba56a7198a60a91662900ac7a02d9dbadb4a86648791070847aed5fbc5e8ce"
+    }
+  ],
+  "mutation_authority": false,
+  "reason_code": "OK",
+  "reconciliation_authority": false,
+  "resolution_digest": "sha256:4d0527d481753d2307756fa50b7b81c526f5670a20ca5d24024d6f54dc1be976",
+  "resolution_status": "resolved",
+  "revision_tip_hash": "4dedbf3d6de98f808ad1a9570ce8ced2c64d41a2193fbc269dc6f68eee8f0b6f",
+  "schema_version": "neuruh.effective-canonical-state-resolver.v0.1",
+  "target_id": "synthetic-target"
+}

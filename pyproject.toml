@@ -1,0 +1,16 @@
+[build-system]
+requires=["setuptools>=68"]
+build-backend="setuptools.build_meta"
+
+[project]
+name="neuruh-effective-canonical-state-resolver"
+version="0.1.0a0"
+description="Deterministic read-only projection of effective canonical truth from lifecycle state plus canonical revision lineage. A resolver, not an authority."
+requires-python=">=3.11"
+license={text="Apache-2.0"}
+
+[project.scripts]
+neuruh-effective-canonical-state-resolver="neuruh_effective_canonical_state_resolver.cli:main"
+
+[tool.setuptools.packages.find]
+where=["src"]
