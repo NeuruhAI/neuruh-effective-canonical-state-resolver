@@ -1,5 +1,7 @@
 # Neuruh Effective Canonical State Resolver
 
+[![ci](https://github.com/NeuruhAI/neuruh-effective-canonical-state-resolver/actions/workflows/ci.yml/badge.svg)](https://github.com/NeuruhAI/neuruh-effective-canonical-state-resolver/actions/workflows/ci.yml)
+
 Public Commons Release 036.
 
 A deterministic, read-only projection answering one question: **what is the effective canonical state now?**
