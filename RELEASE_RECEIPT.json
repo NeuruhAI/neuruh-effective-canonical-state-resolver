@@ -54,5 +54,5 @@
   "revalidated_release_version": "v0.1.0-alpha",
   "schema_version": "neuruh.public-release-receipt.v1",
   "status": "APPROVED_FOR_PUBLIC_RELEASE",
-  "tested_source_commit": "PENDING_COMMIT"
+  "tested_source_commit": "b914dca5a0312dc96d5c13e0005b27ac639cf451"
 }
