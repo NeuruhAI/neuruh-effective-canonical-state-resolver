@@ -1,5 +1,18 @@
 {
   "artifact": "effective-canonical-state-resolver",
+  "founder_authorization": {
+    "conditions_verified": [
+      "no private data",
+      "no private endpoints",
+      "no secrets",
+      "Apache-2.0 preserved",
+      "all tests green",
+      "composition clean"
+    ],
+    "granted": true,
+    "granted_at": "2026-08-20T06:51:36.853005+00:00",
+    "instrument": "T36 Public Commons + OSS Release Closure, 2026-08-20"
+  },
   "maturity": "ACTIVE_ALPHA",
   "package_version": "0.1.0a0",
   "public_boundary": {
@@ -14,15 +27,22 @@
     "proprietary_scoring": false
   },
   "qualification": {
+    "clean_environment_install": "PASS",
     "cli_smoke": "PASS",
+    "continuous_integration": "github-actions/.github/workflows/ci.yml",
+    "cross_component_composition_035_036": "PASS",
+    "documented_output_reproduced": "PASS",
     "exact_public_composition": "PASS",
     "git_history_gitleaks": "PASS",
     "license": "Apache-2.0",
+    "license_text_complete": true,
     "private_implementation_reference_scan": "PASS",
+    "revalidated_at": "2026-08-20T06:51:36.853005+00:00",
     "source_secret_pattern_scan": "PASS",
     "synthetic_end_to_end": "PASS",
     "synthetic_examples_only": true,
     "tests": {
+      "command": "python -m unittest discover -s tests -v",
       "count": 33,
       "status": "PASS"
     },
@@ -31,7 +51,8 @@
   "qualified_at": "2026-08-10T20:49:04.051656+00:00",
   "release_version": "v0.1.0-alpha",
   "repository": "NeuruhAI/neuruh-effective-canonical-state-resolver",
+  "revalidated_release_version": "v0.1.0-alpha",
   "schema_version": "neuruh.public-release-receipt.v1",
-  "status": "QUALIFIED_FOR_PUBLIC_RELEASE_PENDING_FOUNDER_AUTHORIZATION",
-  "tested_source_commit": "e9723f02c0f85e291623b183e4761900ad0944f9"
+  "status": "APPROVED_FOR_PUBLIC_RELEASE",
+  "tested_source_commit": "PENDING_COMMIT"
 }
